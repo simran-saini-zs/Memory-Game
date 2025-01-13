@@ -7,20 +7,46 @@
     width: 500px;
     margin: 150px auto auto auto;
 }
+body{
+    background-color: #C0D6DF;
+}
 .d{
    height: 100px;
    width: 100px;
-   background-color: blueviolet;
+   background-color: #4F6D7A;
 }
 .result{
     display: flex; 
     justify-content: center; 
     align-items: center; 
-    border: 2px solid black; 
     height: 500px;
     width: 500px;
     margin: 150px auto auto auto;
+    flex-direction: column;
 }
-.restart,h1{
-    margin: 180px auto auto auto;
+.restart{
+    padding: 15px;
+    background-color: #C0D6DF;
+    border: 2px solid #4F6D7A;
+    font-weight: bold;
 }
+.d {
+    -webkit-animation: flip 1s;
+    animation: flip 1s;
+  }
+  @-webkit-keyframes flip {
+    from {
+      transform: rotateY(90deg)
+    }
+    to {
+      transform: rotateY(0deg)
+    }
+  }
+  @keyframes flip {
+    from {
+      transform: rotateY(90deg)
+    }
+    to {
+      transform: rotateY(0deg)
+    }
+  }
